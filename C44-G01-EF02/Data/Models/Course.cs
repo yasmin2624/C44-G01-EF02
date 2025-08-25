@@ -15,5 +15,8 @@ namespace C44_G01_EF02.Data.Models
 
         public int Top_ID { get; set; }
         public Topic Topic { get; set; } = null!;
+        public ICollection<Stud_Course> Stud_Courses { get; set; } = new HashSet<Stud_Course>();
+        public ICollection<Course_Inst> Course_Instructors { get; set; } = new HashSet<Course_Inst>();
+
     }
 }

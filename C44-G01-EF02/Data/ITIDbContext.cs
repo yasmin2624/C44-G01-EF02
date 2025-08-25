@@ -26,6 +26,9 @@ namespace C44_G01_EF02.Data
         public DbSet<Course> Courses { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Topic> Topics { get; set; }
+        public DbSet<Stud_Course> Stud_Courses { get; set; }
+        public DbSet<Course_Inst> Course_Instructors { get; set; }
+
 
     }
 }

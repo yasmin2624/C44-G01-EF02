@@ -16,5 +16,6 @@ namespace C44_G01_EF02.Data.Models
 
         public int Dept_ID { get; set; }
         public Department Department { get; set; } = null!;
+        public ICollection<Course_Inst> Course_Instructors { get; set; } = new HashSet<Course_Inst>();
     }
 }

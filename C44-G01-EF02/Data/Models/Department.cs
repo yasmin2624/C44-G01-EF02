@@ -14,6 +14,8 @@ namespace C44_G01_EF02.Data.Models
 
         public int? Ins_ID { get; set; }
         public Instructor? Head { get; set; }
+        public ICollection<Student> Students { get; set; } = new HashSet<Student>();
+        public ICollection<Instructor> Instructors { get; set; } = new HashSet<Instructor>();
 
     }
 }

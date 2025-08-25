@@ -10,5 +10,6 @@ namespace C44_G01_EF02.Data.Models
     {
         public int ID { get; set; }
         public string Name { get; set; } = null!;
+        public ICollection<Course> Courses { get; set; } = new HashSet<Course>();
     }
 }
